@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
+* {
+    margin: 0px;
+    border: 0px;
+    padding: 0px;
+    outline: 0px;
+    box-sizing: border-box;
+    font-family: 'Ubuntu';
+}
+
+html, body {
+    width: 100vw;
+    height: 100vh;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+}
+
+.left {
+    width: 50vw;
+    height: 100vh;
+    background-image: url(./img/fundo4.jpg);
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.left > h1 {
+    color: #fff;
+    font-size: 4rem;
+    font-weight: lighter;
+    margin-bottom: 20px;
+}
+
+.left > h4 {
+    color: #fff;
+}
+
+.right {
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    animation: start 0.7s;
+}
+
+@keyframes start {
+    to {
+        transform: scale(100%);
+    }
+    from {
+        transform: scale(0%);
+    }
+}
+
+.right > img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: gray 4px solid;
+    margin-bottom: 10px;
+}
+
+.right > h1 {
+    color: #808080;
+    font-size: 3rem;
+    margin: 20px;
+}
+
+.right > p {
+    text-align: justify;
+
+}
+
+.navbar {
+    position: absolute;
+    bottom: 30px;
+}
+
+.navbar > nav > a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    margin: 20px;
+    padding-bottom: 5px;
+}
+
+.linebottom {
+    border-bottom: 2px solid #fff;
+}
