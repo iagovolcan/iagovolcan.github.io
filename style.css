@@ -18,6 +18,16 @@ html, body {
 main {
     display: flex;
     flex-direction: row;
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+
+.showCard {
+    display: flex;
+}
+
+.hiddenCard {
+    display: none !important;
 }
 
 .left {
@@ -30,6 +40,7 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: fixed;
 }
 
 .left > h1 {
@@ -51,6 +62,8 @@ main {
     align-items: center;
     padding: 40px;
     animation: start 0.7s;
+    position: relative;
+    left: 50vw;
 }
 
 @keyframes start {
@@ -78,7 +91,6 @@ main {
 
 .right > p {
     text-align: justify;
-
 }
 
 .navbar {
@@ -86,14 +98,91 @@ main {
     bottom: 30px;
 }
 
-.navbar > nav > a {
+.navbar > nav > button {
     text-decoration: none;
     color: #fff;
+    font-size: 1rem;
+    background-color: transparent;
     font-weight: bold;
     margin: 20px;
     padding-bottom: 5px;
+    cursor: pointer;
 }
 
 .linebottom {
     border-bottom: 2px solid #fff;
+}
+
+.sobre {
+    max-width: 500px;
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+}
+
+.cards > img {
+    width: 100px;
+    height: auto;
+    margin: 20px;
+}
+
+.cards > span {
+    text-align: center;
+}
+
+.ambiente {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+h2 {
+    text-align: center;
+}
+
+@media (max-width: 700px) {
+    main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .left {
+        width: 100vw;
+        height: 100vh;
+        background-image: url(./img/fundo4.jpg);
+        background-size: cover;
+        background-position: center center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+    .right {
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 40px;
+        animation: start 0.7s;
+        position: relative;
+        left: 0px;
+    }
+    
 }

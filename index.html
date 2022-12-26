@@ -14,15 +14,16 @@
             <h4>DESENVOLVEDOR WEB FULL-STACK JUNIOR</h4>
             <section class="navbar">
                 <nav>
-                    <a href="./index.html" class="linebottom">SOBRE</a>
-                    <a href="./ambiente.html">AMBIENTE</a>
-                    <a href="">CONTATO</a>
+                    <button id="sobre" class="linebottom" onclick="showCard1()">SOBRE</button>
+                    <button id="ambiente" onclick="showCard2();">AMBIENTE</button>
+                    <button id="contato" onclick="showCard3()">CONTATO</button>
                 </nav>
             </section>
         </section>
-        <section class="right">
+        <section class="right card1">
             <img src="img/perfil.jpg" alt="">
             <h1>Olá!</h1>
+            <div class="sobre">
                 <p>
                     Eu sou <strong>Iago Volcan</strong>, um desenvolvedor web full-stack junior iniciante no mundo do desenvolvimento web.
                 </p>
@@ -38,7 +39,85 @@
                 <p>
                     Usando sempre as melhores práticas de programação para deixar os códigos de alta qualidade, legíveis e compartilháveis.
                 </p>
+            </div>
+        </section>
+        <section class="right card2 hiddenCard">
+            <h2>MEU AMBIENTE DE DESENVOLVIMENTO</h2>
+            <section class="ambiente">
+                <div class="cards">
+                    <img src="./img/icons/ubuntu.png" alt="">
+                    <span><strong>Linux Ubuntu</strong> como sistema operacional</span>
+                </div>
+                <div class="cards">
+                    <img src="./img/icons/vscode.png" alt="">
+                    <span><strong>Visual Studio Code</strong> como editor de códigos</span>
+                </div>
+                <div class="cards">
+                    <img src="./img/icons/html5.png" alt="">
+                    <span><strong>HTML5</strong> como linguagem de marcação</span>
+                </div>
+                <div class="cards">
+                    <img src="./img/icons/css3.png" alt="">
+                    <span><strong>CSS3</strong> como folhas de estilização</span>
+                </div>
+                <div class="cards">
+                    <img src="./img/icons/javascript.png" alt="">
+                    <span><strong>JavaScript</strong> como idioma de programação</span>
+                </div>
+                <div class="cards">
+                    <img src="./img/icons/nodejs.png" alt="">
+                    <span><strong>Node.js</strong> como ambiente de execução back-end</span>
+                </div>
+                <div class="cards">
+                    <img src="./img/icons/react.png" alt="">
+                    <span><strong>React</strong> como biblioteca para JavaScript</span>
+                </div>
+                <div class="cards">
+                    <img src="./img/icons/styledcomponents.png" alt="">
+                    <span><strong>Styled-components</strong> como estilização CSS em JavaScript</span>
+                </div>
+                <div class="cards">
+                    <img src="./img/icons/github.png" alt="">
+                    <span><strong>GitHub</strong> como controle de versionamento do Git</span>
+                </div>
+                <div class="cards">
+                    <img src="./img/icons/postgresql.png" alt="">
+                    <span><strong>PostgreSQL</strong> como banco de dados principal</span>
+                </div>
+                <div class="cards">
+                    <img src="./img/icons/beekeeper.png" alt="">
+                    <span><strong>Beekeeper</strong> como cliente SQL</span>
+                </div>
+                <div class="cards">
+                    <img src="./img/icons/postman.png" alt="">
+                    <span><strong>Postman</strong> para testes em API's</span>
+                </div>
+            </section>
+        </section>
+        <section class="right card3 hiddenCard">
+            <h2>CONTATO</h2>
+            <section class="ambiente">
+                <a href="https://wa.me/5553991261037">
+                    <div class="cards">
+                        <img src="./img/icons/whatsapp.png" alt="">
+                        <span><strong>WhatsAPP</strong></span>
+                    </div>
+                </a>
+                <a href="mailto:iagovolcan92@gmail.com">
+                    <div class="cards">
+                        <img src="./img/icons/gmail.png" alt="">
+                        <span><strong>E-mail</strong></span>
+                    </div>
+                </a>
+                <a href="tel:+5553991261037">
+                    <div class="cards">
+                        <img src="./img/icons/telefone.png" alt="">
+                        <span><strong>Telefone</strong></span>
+                    </div>
+                </a>
+            </section>
         </section>
     </main>
+    <script src="./script.js"></script>
 </body>
 </html>
