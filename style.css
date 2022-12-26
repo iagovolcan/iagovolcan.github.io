@@ -37,6 +37,7 @@ main {
     background-image: url(./img/fundo4.jpg);
     background-size: cover;
     background-position: center center;
+    background-attachment: fixed;
     display: flex;
     flex-direction: column;
     justify-content: center;
