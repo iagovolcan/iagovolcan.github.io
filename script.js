@@ -15,11 +15,11 @@ const showCard1 = () => {
     sobre.classList.add('linebottom')
     ambiente.classList.remove('linebottom')
     contato.classList.remove('linebottom')
-
-    sobre.addEventListener('click', ()=>{
-        scroll(0, 700)
-    })
 }
+
+sobre.addEventListener('click', ()=>{
+    scroll(0, 700)
+})
 
 const showCard2 = () => {
     card2.classList.add('showCard')
@@ -30,12 +30,11 @@ const showCard2 = () => {
     sobre.classList.remove('linebottom')
     ambiente.classList.add('linebottom')
     contato.classList.remove('linebottom')
-
-    ambiente.addEventListener('click', ()=>{
-        scroll(0, 700)
-    })
-
 }
+
+ambiente.addEventListener('click', ()=>{
+    scroll(0, 700)
+})
 
 const showCard3 = () => {
     card3.classList.add('showCard')
@@ -46,8 +45,8 @@ const showCard3 = () => {
     sobre.classList.remove('linebottom')
     ambiente.classList.remove('linebottom')
     contato.classList.add('linebottom')
-
-    contato.addEventListener('click', ()=>{
-        scroll(0, 700)
-    })
 }
+
+contato.addEventListener('click', ()=>{
+    scroll(0, 700)
+})
