@@ -6,6 +6,14 @@ const sobre = document.querySelector('#sobre')
 const ambiente = document.querySelector('#ambiente')
 const contato = document.querySelector('#contato')
 
+const main = document.getElementsByTagName('main')[0]
+const load = document.querySelector('.loading')
+
+const loading = () => {
+    load.classList.add('load')
+    main.classList.add('show')
+}
+
 const showCard1 = () => {
     card1.classList.add('showCard')
     card1.classList.remove('hiddenCard')
