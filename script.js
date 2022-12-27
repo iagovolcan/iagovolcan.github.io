@@ -41,7 +41,9 @@ const showCard2 = () => {
 }
 
 ambiente.addEventListener('click', ()=>{
+    if(window.innerWidth < 700){
     scroll(0, 700)
+}
 })
 
 const showCard3 = () => {
